@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Josh Hartfield | Developer Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:svgjs="http://svgjs.dev/svgjs"
+      viewBox="0 0 2000 2000"
+      width="700"
+      height="700"
+      opacity="1"
+    >
+      <defs>
+        <filter
+          id="grainy"
+          x="-20%"
+          y="-20%"
+          width="140%"
+          height="140%"
+          filterUnits="objectBoundingBox"
+          primitiveUnits="userSpaceOnUse"
+          color-interpolation-filters="linearRGB"
+        >
+          <feTurbulence
+            type="turbulence"
+            baseFrequency="0.105"
+            numOctaves="4"
+            seed="15"
+            stitchTiles="stitch"
+            x="0%"
+            y="0%"
+            width="100%"
+            height="100%"
+            result="turbulence"
+          ></feTurbulence>
+          <feSpecularLighting
+            surfaceScale="16"
+            specularConstant="3"
+            specularExponent="20"
+            lighting-color="#444444"
+            x="0%"
+            y="0%"
+            width="100%"
+            height="100%"
+            in="turbulence"
+            result="specularLighting"
+          >
+            <feDistantLight azimuth="3" elevation="141"></feDistantLight>
+          </feSpecularLighting>
+        </filter>
+      </defs>
+    </svg>
+    <!-- navbar -->
+    <nav class="navbar m-5 navbar-dark fixed-top">
+      <div class="container-fluid no-grain">
+        <a href="#landing" class="navbar-brand">
+          <span class="fw-bold">JOSH<br />DEV.</span>
+        </a>
+        <!-- toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse position-absolute" id="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT/ BACKGROUND/ PROFILE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"
+                >PORTFOLIO/ BUILDS/ PROJECTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                >CONTACT/ SEND A MESSAGE/ GET IN TOUCH</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="links-bar">
+      <a href="https://example.com" class="m-lg-5 m-md-4">//Linkedin</a>
+      <a href="https://example.com" class="m-lg-5 m-md-4">//Github</a>
+      <a href="https://example.com" class="m-lg-5 m-md-4">//Email</a>
+    </div>
+
+    <!--Landing Page-->
+    <section class="py-5" id="landing">
+      <div class="container-fluid my-5">
+        <div class="row align-items-center ui-plate">
+          <div
+            class="h-100 col-12 col-lg-2 col-md-5 col-sm-6 d-flex flex-column align-items-center justify-content-center me-5"
+          >
+            <div class="page-number">01</div>
+          </div>
+
+          <div class="p-5 col-12 col-lg-5 col-md-10 col-sm-12">
+            <div
+              class="h-100 d-flex flex-column align-items-lg-start px-5 justify-content-center"
+            >
+              <h1 class="name mb-5">JOSHUA HARTFIELD</h1>
+              <h2 class="job-title display-5 mb-5 text-center text-glow">
+                Software.<span class="make-blue">Developer</span>
+              </h2>
+              <div class="d-flex justify-content-start">
+                <a href="#portfolio" class="btn btn-sm me-4">Portfolio</a>
+                <a href="#contact" class="btn btn-sm ms-2" id="contact-btn"
+                  >Contact</a
+                >
+              </div>
+              <p class="hero-description pt-5">
+                Self-taught front-end developer and experienced creative project
+                manager eager to transition into the tech industry. I'm driven
+                to build impactful solutions that tackle real-world challenges
+                and achieve exceptional results through collaboration. Let's
+                connect and discuss how I can contribute to your team's success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About Page-->
+    <section class="py-5" id="about">
+      <div class="container my-5">
+        <div class="row py-5 ui-plate align-items-center">
+          <div class="py-3 p-5 col-12 col-lg-4 col-sm-10">
+            <div class="">
+              <h2>About Me</h2>
+              <hr />
+              <p>
+                As a newly self-taught front-end developer, I have expertise in
+                HTML, CSS, JavaScript, and React, which enables me to develop
+                responsive and intuitive web applications that deliver an
+                exceptional user experience across all devices.
+              </p>
+              <br />
+              <p>
+                I possess excellent communication and collaboration skills,
+                working effectively with cross-functional teams such as
+                designers, back-end developers, and project managers. My strong
+                work ethic and commitment to delivering high-quality work within
+                tight deadlines have contributed to successful project execution
+                in the past.
+              </p>
+              <br />
+              <p>
+                As a self-motivated developer, I continuously seek to enhance my
+                skills and knowledge, staying up to date with the latest
+                industry-standard tools and techniques.
+              </p>
+              <br />
+              <p>
+                If you're searching for a dedicated, proficient, and ambitious
+                front-end developer who can deliver cutting-edge web
+                applications that meet your business needs, I'm ready to
+                collaborate and exceed your expectations.
+              </p>
+            </div>
+          </div>
+          <div class="py-3 col-lg-4 col-sm-5">
+            <h2 class="skills-title">Skills</h2>
+            <div class="p-5 h-100 d-flex justify-content-center text-center">
+              <div class="row icon-grid">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                  <div class="icon">
+                    <img id="i1" src="/assets/icons8-html-5.svg" />
+                    <p class="grid-skills-label">HTML</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                  <div class="icon">
+                    <img id="i2" src="/assets/icons8-css3.svg" />
+                    <p class="grid-skills-label">CSS</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                  <div class="icon">
+                    <img id="i3" src="/assets/icons8-javascript.svg" />
+                    <p class="grid-skills-label">JavaScript</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                  <div class="icon">
+                    <img id="i4" src="/assets/icons8-react.svg" />
+                    <p class="grid-skills-label">React</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                  <div class="icon">
+                    <img id="i5" src="/assets/icons8-sass.svg" />
+                    <p class="grid-skills-label">Sass</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                  <div class="icon">
+                    <img id="i6" src="/assets/icons8-git.svg" />
+                    <p class="grid-skills-label">Git</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                  <div class="icon">
+                    <img id="i7" src="/assets/icons8-github (2).svg" />
+                    <p class="grid-skills-label">GitHub</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                  <div class="icon">
+                    <img id="i8" src="/assets/icons8-node-js.svg" />
+                    <p class="grid-skills-label">Node.js</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-3 col-12 col-lg-4 col-sm-7">
+            <div class="p-5">
+              <h2>Background</h2>
+              <hr />
+              <p>
+                <li>
+                  Creative Fabrication Project Manager in the design and build
+                  industry
+                </li>
+                <li>
+                  University degree in architecture, providing a strong
+                  foundation in design principles
+                </li>
+                <li>
+                  Transferable skills include attention to detail, spatial
+                  planning, and problem-solving abilities
+                </li>
+                <li>
+                  Proficient in coordinating teams, managing timelines, and
+                  effective stakeholder communication
+                </li>
+                <li>
+                  Keen eye for aesthetics and creating engaging user experiences
+                </li>
+                <li>
+                  Strong ability to think critically and troubleshoot front end
+                  code
+                </li>
+                <li>
+                  Well-rounded candidate ready to contribute and grow as an
+                  entry-level Front End Developer.
+                </li>
+              </p>
+              <br />
+              <br />
+              <br />
+              <div class="page-number">02</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Portfolio Page-->
+    <section class="py-5" id="portfolio">
+      <div class="page-number position-absolute">03</div>
+      <div class="container my-5">
+        <div class="row py-5 ui-plate">
+          <div class="py-3 col-12 col-lg-4 col-sm-6">
+            <div class="card border-0 h-100">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Website Portfolio</h4>
+                <p class="lead card-subtitle">Responsive Website</p>
+                <p class="card-text mx-5 d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+                <a href="" class="btn btn-outline-primary btn-lg mt-3">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="py-3 col-lg-4 col-sm-6">
+            <div class="card border-0 h-100">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">E-Commerce Website</h4>
+                <p class="lead card-subtitle">Responsive Website</p>
+                <p class="card-text mx-5 d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+                <a href="" class="btn btn-outline-primary btn-lg mt-3">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="py-3 col-lg-4 col-sm-6">
+            <div class="card border-0 h-100">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Interactive Game</h4>
+                <p class="lead card-subtitle">Responsive Website</p>
+                <p class="card-text mx-5 d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+                <a href="" class="btn btn-outline-primary btn-lg mt-3">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="py-3 col-lg-4 col-sm-6">
+            <div class="card border-0 h-100">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Blogging Platform</h4>
+                <p class="lead card-subtitle">Responsive Website</p>
+                <p class="card-text mx-5 d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+                <a href="" class="btn btn-outline-primary btn-lg mt-3">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="py-3 col-lg-4 col-sm-6">
+            <div class="card border-0 h-100">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Social Media Dashboard</h4>
+                <p class="lead card-subtitle">Responsive Website</p>
+                <p class="card-text mx-5 d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+                <a href="" class="btn btn-outline-primary btn-lg mt-3">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="py-3 col-lg-4 col-sm-6">
+            <div class="card border-0 h-100">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Music Player App</h4>
+                <p class="lead card-subtitle">Responsive Website</p>
+                <p class="card-text mx-5 d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+                <a href="" class="btn btn-outline-primary btn-lg mt-3">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Contact Page-->
+    <section class="vh-120 py-5" id="contact">
+      <div class="container my-5">
+        <div class="row py-5 ui-plate align-items-center">
+          <div class="p-5 col-lg-6 col-md-12">
+            <div class="py-3 h-100">
+              <h2 class="pb-5">Get in touch:</h2>
+              <form action="#" method="post">
+                <div class="form-group form px-5 py-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                  />
+                  <br />
+                </div>
+                <div class="form-group px-5 py-2">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <br />
+                <div class="form-group px-5 py-2">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="12"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <br />
+                <button type="submit" class="btn contact-btn2 btn-lg mx-5">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="py-3 col-lg-6 col-md-12">
+            <div class="p-5 h-100">
+              <div class="page-number">04</div>
+              <p class="contact-description">
+                Enthusiastic about embarking on my journey as a developer! If
+                you're seeking a passionate and motivated individual for an
+                entry-level developer position, I would be thrilled to explore
+                opportunities with your organisation. I am eager to contribute
+                my skills and knowledge gained through my education and personal
+                projects to make a positive impact. I am open to discussing any
+                entry-level developer roles within your team where I can
+                continue to learn, grow, and contribute to the success of your
+                projects. Let's connect and discuss how I can bring value to
+                your organisation as I embark on my exciting career as a
+                developer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Thankyou!</h5>
+            <hr />
+            <p>
+              I'm grateful for every visitor to my site. Your presence validates
+              my work and fuels my motivation. Thank you for your interest and
+              support. I hope to hear from you soon!
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Navigation</h5>
+            <hr />
+            <ul class="list-unstyled">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center">
+          <p>&copy; 2023 Joshua Hartfield. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
