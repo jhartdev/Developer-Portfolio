@@ -24,6 +24,8 @@ body {
     #221c1e,
     #272221
   );
+  user-select: none;
+  user-zoom: none;
 }
 
 body,
