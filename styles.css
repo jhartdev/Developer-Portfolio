@@ -1,7 +1,7 @@
 /* ----------------------------------------------- Variables ----------------------------------------------- */
 
 :root {
-  --colour1: #fe068679;
+  --colour1: #fe0650c0;
   --colour2: #181818;
   --colour3: #ffffff;
   --colour4: #f73e1b;
@@ -73,6 +73,18 @@ body::-webkit-scrollbar {
   background-image: linear-gradient(to right, #ffffff1a 1px, transparent 1px),
     linear-gradient(to bottom, #ffffff0c 1px, transparent 1px);
   background-size: 46px 44px; /* Adjust the size of the grid cells */
+}
+
+#background-img {
+  position: absolute;
+  border-radius: 20px;
+  opacity: 70%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(10%);
 }
 
 .page-number {
@@ -151,10 +163,9 @@ p {
 }
 
 #main-nav {
-  top: 15%;
-  right: 15%;
+  top: 45px;
+  right: 65px;
   background-color: var(--colour5);
-  padding: 10px;
   font-weight: 700;
 }
 
@@ -164,6 +175,7 @@ p {
 
 .nav-link {
   color: var(--colour3);
+  margin: 2px 10px;
 }
 
 .links-bar a {
@@ -197,6 +209,24 @@ p {
 }
 
 /*--About Page--*/
+
+#cv-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-left: 237px;
+  border-radius: 0px;
+  padding: 10px;
+  width: 100px;
+  height: 30px;
+  font-size: 24px;
+  background-color: var(--colour1);
+  border: none;
+  font-weight: 400;
+  letter-spacing: 0px;
+  box-shadow: 0 0 40px rgba(176, 66, 26, 0.1), 0 0 120px rgba(189, 70, 14, 0.2);
+}
 
 .icon-grid {
   margin-top: 2rem;
