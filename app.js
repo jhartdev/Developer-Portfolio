@@ -33,10 +33,11 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   });
   
 
-  const navLinks = document.querySelectorAll('.navbar-nav a');
+  // Get all navigation links and the additional buttons in the landing section
+  const links = document.querySelectorAll('.navbar-nav a, .scroll-to');
 
   // Attach click event listener to each link
-  navLinks.forEach(link => {
+  links.forEach(link => {
     link.addEventListener('click', event => {
       event.preventDefault(); // Prevent the default anchor link behavior
 
