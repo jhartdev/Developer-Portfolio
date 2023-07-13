@@ -32,3 +32,20 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
       });
   });
   
+
+  const navLinks = document.querySelectorAll('.navbar-nav a');
+
+  // Attach click event listener to each link
+  navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault(); // Prevent the default anchor link behavior
+
+      // Get the target section's id from the link's href attribute
+      const targetId = link.getAttribute('href');
+
+      // Scroll smoothly to the target section
+      document.querySelector(targetId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
